@@ -669,5 +669,153 @@ a{
 		left: 43%;
 	}
 }
+.companys {
+	padding: 10vh 0;
+	text-align: center;
+	&__title {
+		font-weight: 700;
+		font-size: rem(45);
+		line-height: 1.44;
+		color: #8b8b8b;
+		margin-bottom: 5vh;
+	}
+	&__organaizer {
+		margin-bottom: 7vh;
+		img{
+			max-width: 100%;
+		}
+	}
+	&__partners {}
+	&__partners-title {}
+	&__partners-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin-bottom: 25px;
+	}
+	&__partners-item {
+		max-width: 300px;
+		img{
+			max-width: 100%;
+		}
+		&:not(:last-child){
+			margin-right: 25px;
+		}
+	}
+	&__more {
+		font-size: rem(18);
+		line-height: em(27);
+		color: #00A1E1;
+		svg{
+			@include adaptive-value("width", 38, 24, 1);
+		}
+	}
+	&__more-link {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		span{
+			margin-right: 7px;
+		}
+	}
+}
+.footer {
+	background-color: #00a1df;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	color: #fff;
+	font-size: rem(20);
+	line-height: 1.44;
+	&__body {}
+	&__header {
+		display: flex;
+	}
+	&__logo-link {
+		width: 200px;
+		margin-right: 7vw;
+		img{}
+	}
+	&__logo {}
+	&__descr {
+		flex-basis: 680px;
+	}
+	&__descr-item {
+		&:not(:last-child){
+			margin-bottom: 15px;
+		}
+	}
+	
+	&__nav {
+		display: flex;	
+		margin-top: -30px;
+	}
+	&__menu-list {
+		width: 200px;
+		margin-right: 7vw;
+		font-family: 'Roboto', sans-serif;
+		font-size: rem(18);
+		line-height: em(21);
+	}
+	&__menu-item {
+		&:not(:last-child){
+			margin-bottom: 15px;
+		}
+	}
+	&__menu-link {}
+	&__info {
+		font-family: 'Circe';
+		padding-top: 70px;
+		display: flex;
+    	flex-direction: column;
+    	min-height: 100%;
+	}
+	&__contacts {
+		font-style: normal;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__contacts-item{
+		margin-bottom: 15px;
+		&:not(:last-child) {
+			margin-right: 25px;
+		}
+	}
+	&__contacts-tel {}
+	&__contacts-address {}
+	&__contacts-email {}
+	&__links {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		height: 100%;
+	}
+	&__links-item{}
+	&__links-map {
+		position: relative;
+		&::before{
+			position: absolute;
+			bottom: 0;
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+		}
+		&:hover::before{display: none;}
+	}
+	&__links-list {
+		display: flex;
+		align-items: center;
+	}
+	&__links-list--item {
+		&:not(:last-child)
+		{
+			padding-right: 20px;
+		}
+	}
+	&__links-list-link {}
+	&__links-partner {}
+	&__links-partner--item {}
+}
 
 @import 'media';
