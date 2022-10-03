@@ -50,8 +50,22 @@
 		if(document.querySelector('.reviews__title')) {
 			document.querySelector('.reviews__title').classList.remove('visually-hidden');
 		} else {}
+		if(document.querySelector('.partners__item-read-more-1')) {
+			document.querySelector('.partners__item-read-more-1').classList.add('partners__item-read-more');
+		} else {}
+		if(document.querySelector('.partners__item-read-more-2')) {
+			document.querySelector('.partners__item-read-more-2').classList.add('partners__item-read-more');
+		} else {}
+		if(document.querySelector('.partners__item-read-more-3')) {
+			document.querySelector('.partners__item-read-more-3').classList.add('partners__item-read-more');
+		} else {}
+		if(document.querySelector('.partners__item-read-more-4')) {
+			document.querySelector('.partners__item-read-more-4').classList.add('partners__item-read-more');
+		} else {}
+		if(document.querySelector('.partners__item-read-more-5')) {
+			document.querySelector('.partners__item-read-more-5').classList.add('partners__item-read-more');
+		} else {}
 	} else {
-
 		if(document.querySelector('.events__title')) {
 			document.querySelector('.events__title').classList.add('visually-hidden');
 		} else {}
@@ -98,6 +112,35 @@
 	  		}
 	  	}
 	});
+	new Swiper ('.paper__images', {
+		autoHeight: true,
+		spaceBetween: 50,
+		grabCursor:true,
+		navigation: {
+	    	nextEl: '.swiper-button-next',
+	    	prevEl: '.swiper-button-prev',
+	  	},
+	});
+// Read more 
+	const readMoreBtn = document.querySelector('.partners__read-more--btn');
+	const item1 = document.querySelector('.partners__item-read-more-1');
+	const item2 = document.querySelector('.partners__item-read-more-2');
+	const item3 = document.querySelector('.partners__item-read-more-3');
+	const item4 = document.querySelector('.partners__item-read-more-4');
+	const item5 = document.querySelector('.partners__item-read-more-5');
+
+	readMoreBtn.addEventListener('click', (e)=>{
+		item1.classList.toggle('_show');
+		item2.classList.toggle('_show');
+		item3.classList.toggle('_show');
+		item4.classList.toggle('_show');
+		item5.classList.toggle('_show');
+		if(readMoreBtn.innerText === 'Показати ще') {
+			readMoreBtn.innerText = 'Згорнути';
+		} else {
+			readMoreBtn.innerText = 'Показати ще';
+		}
+	})
 
 
 
