@@ -220,6 +220,32 @@ a{
 	&__form {
 		@include adaptive-value("margin-bottom", 37, 20, 1);
 	}
+	&__languages{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 3vh;
+	}
+	&__languages-btn{
+		border: none;
+		background-color: transparent;
+		color: #fff;
+		font-size: rem(20);
+		line-height: 1.4;
+		cursor: pointer;
+		&:not(:last-child){
+			margin-right: 10px;
+		}
+		position: relative;
+		&._active::after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+		}
+	}
 	&__form-box {
 		position: relative;
 	}
@@ -1095,7 +1121,7 @@ a{
 	&__pagination-list--item__next{
 		@include adaptive-value("padding-left", 9, 3, 1);
 	}
-}// ВОТ это можно в ПОДii добавить
+}
 .back-news{
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
@@ -1108,7 +1134,6 @@ a{
 		margin-right: 10px;
 	}
 }
-// ВОТ это можно в ПОДii добавить
 
 
 .paper {
@@ -1200,7 +1225,99 @@ a{
 	}
 	&__share-link {}
 }
-
+.occasion-paper{
+	padding-bottom: 10vh;
+	&__header{
+		max-width: 100%;
+	}
+	.paper__content{
+		position: relative;
+		&::before{
+			display: block;
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0, 161, 225, 0.12);
+			border-radius: 20px;
+			transform: rotate(-4.77deg)
+		}
+	}
+	.paper__title{
+		@include adaptive-value("margin-bottom", 35, 20, 1);
+	}
+	&__data{
+		@include adaptive-value("margin-bottom", 20, 10, 1);
+		font-family: 'Roboto', sans-serif;
+		font-size: rem(30);
+		line-height: 1.25;
+		color: #6b6b6b;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__data-date,
+	&__data-time{
+		font-weight: 700;
+		padding-left: 90px;
+		position: relative;
+		margin-right: 15px;
+		margin-bottom: 50px;
+		&::before{
+			content: '';
+			position: absolute;
+			top: -20px;
+			left: 0;
+			width: 70px;
+			height: 70px;
+		}
+	}
+	&__data-location{
+		padding-left: 110px;
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			top: -20px;
+			left: 0;
+			width: 90px;
+			height: 70px;
+		}
+	}
+	&__data-date::before{
+		background: url('../images/icons/date-big.png')no-repeat;
+	}
+	&__data-time::before{
+		background: url('../images/icons/time-big.png')no-repeat;
+	}
+	&__data-location::before{
+		background: url('../images/icons/location-big.png')no-repeat;
+	}
+	&__regstered{
+		font-family: 'Roboto', sans-serif;
+		font-size: rem(18);
+		line-height: 1.2;
+		color: #fff;
+		text-align: center;
+		padding-top: 3vh;
+	}
+	&__regstered-link{
+		display: inline-block;
+		font-size: inherit;
+		line-height: inherit;
+		max-width: 275px;
+		width: 100%;
+		box-shadow: 0px 0px 22px #DDF5FF;
+		border-radius: 5px;
+		@include adaptive-value("padding-top", 20, 14, 1);
+		@include adaptive-value("padding-bottom", 20, 14, 1);
+		padding-right: 35px;
+		padding-left: 35px;
+		background-color: $colBlue;
+	}
+}
 
 .similar {
 	padding-top: 12vh;
@@ -2011,6 +2128,80 @@ a{
 		background-color: transparent;
 		cursor: pointer;
 		display: none;
+	}
+}
+.four {
+	position: relative;
+	.gear__top-left{
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include adaptive-value("width", 500, 170, 1);
+		@include adaptive-value("height", 500, 170, 1);
+		svg{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.gear__bottom-right--big{
+		position: absolute;
+		bottom: -5vh;
+		right: -5vh;
+		@include adaptive-value("width", 500, 170, 1);
+		@include adaptive-value("height", 500, 170, 1);
+		svg{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.gear__bottom-right--small{
+		position: absolute;
+		bottom: 25vh;
+		right: 25vh;
+	}
+	width: 100%;
+	height: 100vh;
+	background-color: #00A0DF; 
+	color: #fff;
+	&__wrapper {
+		width: 100%;
+	 	min-height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	&__title {
+		font-size: rem(350);
+		line-height: 1.44;
+		// text-shadow: inset 0 9px 10px 0 #0087BC;
+			text-shadow: 
+			0 20px 20px #0087BC, 
+			0 0px 0 #0087BC, 
+			0 10px 0 #0087BC, 
+			0 5px 0 #0087BC, 
+			0 15px 6px #0087BC;
+	}
+	&__descr {
+		font-size: rem(30);
+		line-height: 1.44;
+		@include adaptive-value("margin-bottom", 50, 20, 1);
+	}
+	&__link {
+		display: inline-block;
+		max-width: 275px;
+		font-size: rem(18);
+		line-height: 1.2;
+		width: 100%;
+		text-align: center;
+		@include adaptive-value("padding-top", 21, 14, 1);
+		@include adaptive-value("padding-bottom", 21, 14, 1);
+		padding-right: 35px;
+		padding-left: 35px;
+		background-color: #00A1DF;
+		border: 0.5px solid #FFFFFF;
+		box-shadow: 0px 0px 20px #DDF5FF;
+		border-radius: 5px;
 	}
 }
 

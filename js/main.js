@@ -1,15 +1,17 @@
 // Menu Burger
-	document.querySelector('.menu__burger').addEventListener('click', function (e){
-		e.preventDefault();
-		
-		if(this.classList.contains('active')) {
-		   this.classList.remove('active');
-		   document.querySelector('.header__menu').classList.remove('active');
-		} else {
-		   this.classList.add('active');
-		   document.querySelector('.header__menu').classList.add('active');
-		}
-	});
+	if(document.querySelector('.menu__burger')) {
+		document.querySelector('.menu__burger').addEventListener('click', function (e){
+			e.preventDefault();
+			
+			if(this.classList.contains('active')) {
+			   this.classList.remove('active');
+			   document.querySelector('.header__menu').classList.remove('active');
+			} else {
+			   this.classList.add('active');
+			   document.querySelector('.header__menu').classList.add('active');
+			}
+		});
+	} else {}
 // Tabs
 	const tabsBtn = document.querySelectorAll('.tabs__nav-btn');
 	const tabsItems = document.querySelectorAll('.tabs__item');
