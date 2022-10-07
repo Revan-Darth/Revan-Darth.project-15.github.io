@@ -31,7 +31,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="header page-header">
+			<header class="header page-header search-result_page">
 				<div class="header__top">
 					<div class="container">
 						<div class="menu__burger">
@@ -94,193 +94,185 @@
 						</nav>
 					</div>
 				</div>
-				<div class="header__content">
-					<h1 class="news-title page-title">
-						Новини
-					</h1>
-				</div>
-				<div class="container">
-					<div class="back-news">
-						<a class="back-news__link" href="news.html">
-							<svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M6 1L1 4L6 7" stroke="white"/>
-							</svg>
-							<span>Назад до всіх новин</span>
-						</a>
-					</div>
-				</div>
 			</header>
 			<main class="main">
-				<!-- Breadcrumbs -->
-				<div class="breadcrumbs">
+				<div class="search-wrapepr search-result">
 					<div class="container">
-						<div class="breadcrumbs__inner">
-							<ul class="breadcrumbs__list mobile-overflow">
-								<li class="breadcrumbs__list-item">
-									<a class="breadcrumbs__list-link" href="index.html">
-										Головна
-									</a>
-								</li>
-								<li class="breadcrumbs__list-item">
-									<a class="breadcrumbs__list-link" href="news.html">
-										Новини
-									</a>
-								</li>
-								<li class="breadcrumbs__list-item">
-									<span class="breadcrumbs__list-link" href="#">
-										Газопостачальної компанії
-									</span>
-								</li>
-
-							</ul>
+						<div class="magazine-container">
+							<form class="search__form search-result__form" action="#">
+								<div class="search__inpBox search-result__inpBox">
+									<input type="text" class="search__inp" placeholder="Пошук">
+									<div class="search__btn-wrapper">
+										<button class="search__btn" type="submit">
+											<svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.16916 0.655518C12.3891 0.655518 15 3.6294 15 7.29713C15 10.9649 12.3891 13.9387 9.16914 13.9387C7.93092 13.9387 6.78261 13.4988 5.83869 12.7495L5.838 12.7487L1.51357 17.6745C1.43333 17.7659 1.30572 17.7682 1.22339 17.6745L0.0578985 16.3469C-0.0223484 16.2555 -0.0182314 16.1039 0.0585842 16.0164L4.38237 11.0914C3.72451 10.0155 3.3383 8.70749 3.3383 7.29713C3.3383 3.6294 5.94915 0.655518 9.16916 0.655518ZM9.16916 12.376C11.6318 12.376 13.6281 10.1022 13.6281 7.29713C13.6281 4.49202 11.6318 2.21825 9.16916 2.21825C6.7065 2.21825 4.71027 4.49202 4.71027 7.29713C4.71027 10.1022 6.70648 12.376 9.16916 12.376Z" fill="#6B6B6B"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="search__selBox search-result__selBox">
+									<select class="search__select" name="sorting">
+										<option value="choice">Сортувати за</option>
+										<option value="month-1">сичень</option>
+										<option value="month-2">лютый</option>
+										<option value="month-3">березень</option>
+										<option value="month-4">квитень</option>
+										<option value="month-5">травень</option>
+										<option value="month-6">червень</option>
+										<option value="month-7">липень</option>
+										<option value="month-8">серпень</option>
+										<option value="month-9">вересень</option>
+										<option value="month-10">жовтень</option>
+										<option value="month-11">листопад</option>
+										<option value="month-12">грудень</option>
+									</select>
+								</div>
+								<div class="search__additionally">
+									<button class="search__additionally-btn" type="submit">Тільки новини</button>
+									<button class="search__additionally-btn" type="submit">Тільки документи</button>
+									<button class="search__additionally-btn" type="submit">Тільки події</button>
+									<button class="search__additionally-btn" type="submit">Тільки кар’єрні кейси</button>
+									<button class="search__additionally-btn _active" type="submit">за часом</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
-				<!--  -->
-				<section class="paper">
+				<section class="search-result__section">
 					<div class="container">
-						<header class="paper__header">
-							<h2 class="paper__title">Для нас формирование ресурсной базы - приоритет на ближайшие годы.</h2>
-							<div class="paper__info">
-								<div class="paper__data">
-									<span class="paper__data-date">10.10.2021</span>
-									<span class="paper__data-category">Категория 3</span>
-								</div>
-								<div class="paper__meta">
-									<a class="paper__meta-link" href="#ресурс">#ресурс</a>
-									<a class="paper__meta-link" href="#сотрудничество">#сотрудничество</a>
-									<a class="paper__meta-link" href="#база">#база</a>
-								</div>
-							</div>
-						</header>
-						<div class="paper__content">
-							<div class="paper__images swiper">
-								<div class="paper__images-slider swiper-wrapper">
-									<div class="paper__image swiper-slide">
-										<img src="images/paper-image--1.jpg" alt="Изображения Рукопожимающих Людей">
-									</div>
-									<div class="paper__image swiper-slide">
-										<img src="images/paper-image--1.jpg" alt="Изображения Рукопожимающих Людей">
-									</div>
-									<div class="paper__image swiper-slide">
-										<img src="images/paper-image--1.jpg" alt="Изображения Рукопожимающих Людей">
+						<div class="magazine-container">
+							<h3 class="search-result__title">Результати пошуку “<span>Споживачі</span>”</h3>
+							<div class="search-result__inner">
+								<div class="search-result__item">
+									<div class="search-result__item-img"><img src="images/event-1.jpg" alt="Изображение Спикера на Вебинаре"></div>
+									<div class="search-result__item-descr">
+										<span class="search-result__item-category">Події</span>
+										<b class="search-result__item-title">Менеджмент фінансів</b>
+										<div class="search-result__item-texts">
+											<p class="search-result__item-text">Побутові <span>споживачі</span> природного газу, яких обслуговує постачальник “останньої надії”</p>
+										</div>
+										<a class="search-result__item-details" href="occasion-item.html">Детальніше</a>
 									</div>
 								</div>
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-							</div>
-							<div class="paper__descr">
-								<p class="paper__descr-item">
-									Для нас формирование ресурсной базы - приоритет на ближайшие годы. ️Нафтогаз сейчас сосредоточивается на газоусификации на существующих участках, а также на освоении новых участков, включая шельф Черного моря.
-									Но реализация таких амбициозных планов требует не менее $20 млрд инвестиций в течение следующих 10 лет. Итак, "Нафтогаз" работает над привлечением как региональных, так и международных партнеров для развития газодобычи.
-								</p>
-								<p class="paper__descr-item">
-									Сегодня подписали меморандумы о взаимопонимании с иностранными компаниями, а именно: Dragon Oil с ОАЭ, азербайджанская SOCAR AQS, американская Helmerich & Payne и 3 Seas Energy.
-								</p>
-								<p class="paper__descr-item">
-									Партнерство запланировано в рамках освоения районов Черного моря и плотных пород, а также направления повышения эффективности добычи полезных ископаемых на истощенных месторождениях
-								</p>
-								<p class="paper__descr-item">
- 									Надеемся, что сотрудничество с мощными международными партнерами позволит нам в кратчайшие сроки реализовать наши планы: раскрыть потенциал украинских недр, повысить эффективность операций, обеспечить страну собственным газом и гуаром против энергетической безопасности.
-								</p>
-								<p class="paper__descr-item">
-									Мы благодарны Правительству за поддержку и надеемся начать бурение первых скважин через два года. По опыту стран, имеющих выход на шельф Черного моря, газ есть, а потенциал добычи полезен. Так что шансы на успех на украинской полке высоки.
-								</p>
-								<p class="paper__descr-item">
- 									Dragon Oil владеет современными технологиями разработки месторождений, которые увеличивают добычу полезных ископаемых и одновременно снижают расходы. Компания работает на каспийском шельфе и инвестировала в его развитие около 7 млрд долларов.
-								</p>
-								<p class="paper__descr-item">
- 									Сотрудничество с SOCAR AQS позволит технологически усилить развитие черноморских районов. Предприятие имеет собственный буровой парк для работы в море и имеет опыт и технические возможности для бурения на сложных участках на суше.
-								</p>
-								<p class="paper__descr-item">
-									Партнерство с 3 Seas Energy и Helmerich & Payne будет сосредоточено на развитии плотных изъятий по всей Украине, а также на освоении уже истощенных месторождений в рамках Договора на увеличение продукции (УИК).
-								</p>
-							</div>
-						</div>
-						<div class="paper__share">
-							<p class="paper__share-text">Поділитися в соцмережах:</p>
-							<ul class="paper__share-list">
-								<li class="paper__share-item">
-									<a class="paper__share-link" href="#">
-										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M11.2886 1C6.1669 1 2 5.16931 2 10.2941C2 15.419 6.1669 19.5882 11.2886 19.5882C16.4104 19.5882 20.5774 15.419 20.5774 10.2941C20.5773 5.16931 16.4102 1 11.2886 1ZM11.2886 18.6715C6.672 18.6715 2.91614 14.9135 2.91614 10.2941C2.91614 5.67485 6.672 1.91667 11.2886 1.91667C15.9051 1.91667 19.6613 5.67485 19.6613 10.2941C19.6612 14.9135 15.9051 18.6715 11.2886 18.6715Z" fill="#00A1E1"/>
-											<path d="M15.1489 7.97194C15.3624 7.86163 15.8736 7.53393 16.1145 6.83054C16.1145 6.83054 15.5338 7.25068 14.7435 7.30018L14.7292 7.30812C14.3248 6.86659 13.7435 6.58961 13.0972 6.58961C11.8745 6.58961 10.8834 7.58144 10.8834 8.80488C10.8834 8.99051 10.9064 9.17079 10.9496 9.34312L10.9389 9.32708C10.9389 9.32708 8.56767 9.46305 6.33213 7.01601C6.33213 7.01601 5.34377 8.69672 7.03603 9.98204C6.66546 10.0438 6.01103 9.71009 6.01103 9.71009C6.01103 9.71009 6.04798 11.4771 7.80177 11.9098C7.51777 11.984 6.98656 12.0085 6.81372 11.9345C6.81372 11.9345 7.07299 13.2814 8.86404 13.5164C8.40704 13.776 7.55487 14.5667 5.62793 14.4184C5.62793 14.4184 7.0116 15.5552 9.58061 15.3948C12.1496 15.2344 14.0147 13.5039 14.7681 11.675C15.5215 9.84607 15.3118 8.80473 15.3118 8.80473C15.3118 8.80473 15.9414 8.47412 16.3741 7.68334C16.1742 7.74323 15.4329 7.92443 15.157 7.9915C15.1542 7.98508 15.1515 7.97851 15.1489 7.97194Z" fill="#00A1E1"/>
-										</svg>
-									</a>
-								</li>
-								<li class="paper__share-item">
-									<a class="paper__share-link" href="#">
-										<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M10.4998 1.26C5.40162 1.26 1.25977 5.40186 1.25977 10.5C1.25977 15.128 4.67333 18.9581 9.11918 19.626L9.60152 19.699V12.4179H7.41867V10.9397H9.60152V8.97668C9.60152 7.76789 9.89159 6.97176 10.3718 6.47227C10.852 5.97278 11.5615 5.72086 12.5489 5.72086C13.3384 5.72086 13.6456 5.7687 13.9377 5.80453V7.01449H12.9098C12.3266 7.01449 11.8482 7.33988 11.5998 7.77328C11.3515 8.20669 11.2741 8.72416 11.2741 9.25149V10.9389H13.8458L13.617 12.4171H11.2741V19.7105L11.7507 19.6457C16.2598 19.0341 19.7398 15.1733 19.7398 10.5C19.7398 5.40186 15.5979 1.26 10.4998 1.26ZM10.4998 2.1C15.1439 2.1 18.8998 5.85583 18.8998 10.5C18.8998 14.5865 15.9748 17.9474 12.1141 18.7039V13.2571H14.3372L14.8253 10.0989H12.1141V9.25149C12.1141 8.81575 12.1939 8.42532 12.3282 8.19082C12.4626 7.95632 12.5921 7.85449 12.9098 7.85449H14.7777V5.0441L14.4135 4.99488C14.1616 4.9608 13.5864 4.88086 12.5489 4.88086C11.4136 4.88086 10.4391 5.19013 9.76641 5.88985C9.09371 6.58956 8.76152 7.63146 8.76152 8.97668V10.0997H6.57867V13.2579H8.76152V18.6777C4.9629 17.873 2.09977 14.5423 2.09977 10.5C2.09977 5.85583 5.85559 2.1 10.4998 2.1Z" fill="#00A1E1"/>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
 
-				<section class="similar">
-					<div class="container">
-						<h2 class="similar__title">Схожі новини</h2>
-						<div class="similar__categories categories">
-							<form class="categories-form" action="#">
-								<button class="similar__categories-item categories-item" type="submit">Категория 1</button>
-								<button class="similar__categories-item categories-item" type="submit">Категория 2</button>
-								<button class="similar__categories-item categories-item" type="submit">Категория 3</button>
-								<button class="similar__categories-item categories-item" type="submit">Категория 4</button>
-								<button class="similar__categories-item categories-item" type="submit">Категория 5</button>
-								<button class="similar__categories-item categories-item" type="submit">Категория 6</button>
-							</form>
-						</div>
-						<div class="novelties__inner">
-							<div class="novelties__card">
-								<div class="novelties__image">
-									<img src="images/novelties-1.jpg" alt="Изображение Людей">
+								<div class="search-result__item">
+									<div class="search-result__item-img"><img src="images/novelties-2.jpg" alt="Изображение Каски"></div>
+									<div class="search-result__item-descr">
+										<span class="search-result__item-category">Новини</span>
+										<b class="search-result__item-title">Газопостачальної компанії</b>
+										<div class="search-result__item-texts">
+											<p class="search-result__item-text">(ПОН) і які приєднаються до Газопостачальної компанії “Нафтогаз України”, мають</p>
+										</div>
+										<a class="search-result__item-details" href="paper.html">Детальніше</a>
+									</div>
 								</div>
-								<div class="novelties__text">
-									<h4 class="novelties__card-title">
-										Природний газ
-									</h4>
-									<p class="novelties__card-descr">
-										Побутові споживачі природного газу, яких обслуговує постачальник “останньої надії”
-									</p>
+
+								<div class="search-result__item">
+									<div class="search-result__item-img"><img src="images/Alexei.jpg" alt="Изображение Алексея Навального"></div>
+									<div class="search-result__item-descr">
+										<span class="search-result__item-category">Кар’єрні кейси</span>
+										<b class="search-result__item-title">Алексей Навальный</b>
+										<div class="search-result__item-texts">
+											<p class="search-result__item-text">Политический соперник президента путина и будующий <span>президент</span> страны</p>
+										</div>
+										<a class="search-result__item-details" href="#">Детальніше</a>
+									</div>
+								</div>
+
+								<div class="search-result__item pdf">
+									<div class="search-result__item-img"><img src="images/magazine-image--1.jpg" alt="Изображение Танкера с Водой"></div>
+									<div class="search-result__item-descr">
+										<span class="search-result__item-category">Журнал</span>
+										<b class="search-result__item-title">Споживання природного газу</b>
+										<div class="search-result__item-texts">
+											<p class="search-result__item-text">Побутові споживачі природного газу, яких обслуговує постачальник “останньої надії”одновременно </p>
+										</div>
+										<a class="mag__link mag__link-file mag__link-file--txt" href="#">
+											<svg width="35" height="37" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M24.4182 20.6604H0.910156V30.3368H20.8771L24.4182 20.6604ZM9.30742 23.6594H7.74648V28.0387H6.90098V23.6594H5.36172V22.9801H9.30742V23.6594ZM13.0002 28.0387L11.9018 26.1381L10.8033 28.0387H9.80605L11.3959 25.4877L9.83496 22.9801H10.8322L11.8873 24.8518L12.9568 22.9801H13.9541L12.4004 25.4877L14.0191 28.0387H13.0002ZM18.4273 23.6594H16.8592V28.0387H16.0137V23.6594H14.4744V22.9801H18.4201V23.6594H18.4273Z" fill="#EF3343"/>
+												<path d="M23.4992 0.433594H5.75801C5.23047 0.433594 4.79688 0.867187 4.79688 1.39473V19.9525H6.71914V2.35586H23.4992V9.01875H30.1621V34.6441H6.71914V31.0453H4.79688V35.6053C4.79688 36.1328 5.23047 36.5664 5.75801 36.5664H31.1232C31.6508 36.5664 32.0844 36.1328 32.0844 35.6053V9.01875L23.4992 0.433594Z" fill="#EF3343"/>
+												<path d="M27.6012 12.386H9.28906V13.8024H27.6012V12.386Z" fill="#EF3343"/>
+												<path d="M24.7033 15.1396H9.28906V16.5561H24.7033V15.1396Z" fill="#EF3343"/>
+											</svg>
+										</a>
+										<a class="mag__link mag__link-file mag__link-file--pdf" href="#">
+											<svg width="31" height="37" viewBox="0 0 31 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_118_715)">
+												<path d="M10.5621 23.7754H9.73828V27.4826H10.5621C10.9668 27.4826 11.292 27.3453 11.5305 27.0707C11.7689 26.7961 11.8918 26.442 11.8918 26.0156V25.2424C11.8918 24.816 11.7689 24.4691 11.5305 24.1945C11.292 23.9127 10.9668 23.7754 10.5621 23.7754Z" fill="#11B24C"/>
+												<path d="M23.4182 20.6606H-0.0898438V30.337H19.8771L23.4182 20.6606ZM7.39687 25.8132C7.07891 26.1022 6.64531 26.2396 6.08887 26.2396H4.99766V28.1546H4.15215V23.096H6.08887C6.64531 23.096 7.08613 23.2405 7.39687 23.5296C7.71484 23.8187 7.87383 24.1944 7.87383 24.6642C7.87383 25.1483 7.71484 25.5241 7.39687 25.8132ZM12.7301 26.0155C12.7301 26.6515 12.5277 27.1646 12.1303 27.562C11.7256 27.9595 11.2053 28.1618 10.5621 28.1618H8.89277V23.1032H10.5621C11.2053 23.1032 11.7256 23.3056 12.1303 23.703C12.535 24.1005 12.7301 24.6208 12.7301 25.2495V26.0155ZM17.1094 23.7753H14.7174V25.3218H16.7553V26.0011H14.7174V28.1618H13.8719V23.1032H17.1094V23.7753V23.7753Z" fill="#11B24C"/>
+												<path d="M6.09121 23.7754H5V25.5604H6.09121C6.40195 25.5604 6.64043 25.4736 6.79941 25.3074C6.9584 25.1412 7.03789 24.9316 7.03789 24.6715C7.03789 24.4113 6.9584 24.2018 6.79941 24.0283C6.64043 23.8621 6.40195 23.7754 6.09121 23.7754Z" fill="#11B24C"/>
+												<path d="M22.4992 0.433594H4.75801C4.23047 0.433594 3.79688 0.867187 3.79688 1.39473V19.9525H5.71914V2.35586H22.4992V9.01875H29.1621V34.6441H5.71914V31.0453H3.79688V35.6053C3.79688 36.1328 4.23047 36.5664 4.75801 36.5664H30.1232C30.6508 36.5664 31.0844 36.1328 31.0844 35.6053V9.01875L22.4992 0.433594Z" fill="#11B24C"/>
+												<path d="M26.5973 12.3862H8.28516V13.8026H26.5973V12.3862Z" fill="#11B24C"/>
+												<path d="M23.6994 15.1396H8.28516V16.5561H23.6994V15.1396Z" fill="#11B24C"/>
+												</g>
+												<defs>
+												<clipPath id="clip0_118_715">
+												<rect width="31" height="37" fill="white"/>
+												</clipPath>
+												</defs>
+											</svg>
+										</a>
+										<a class="mag__link mag__link-file mag__link-file--video" href="#">
+											<svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10 6.5L0.25 12.1292L0.250001 0.870834L10 6.5Z" fill="white"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="search-result__item">
+									<div class="search-result__item-img"><img src="images/news-3.jpg" alt="Изображение Людей с Природным Газом"></div>
+									<div class="search-result__item-descr">
+										<span class="search-result__item-category">Новини</span>
+										<b class="search-result__item-title">Наші співробітники</b>
+										<div class="search-result__item-texts">
+											<p class="search-result__item-text">Побутові споживачі природного газу, яких обслуговує постачальник “останньої надії”</p>
+										</div>
+										<a class="search-result__item-details" href="paper.html">Детальніше</a>
+									</div>
+								</div>
+
+								<div class="search-result__item video">
+									<div class="search-result__item-img"><img src="images/lecture-1.jpg" alt="Изображение Человека"></div>
+									<div class="search-result__item-descr">
+										<span class="search-result__item-category">Журнал</span>
+										<b class="search-result__item-title">Маврикій Калугін</b>
+										<div class="search-result__item-texts">
+											<p class="search-result__item-text">Побутові споживачі природного газу, яких обслуговує постачальник “останньої надії”одновременно снижают расходы. Компания работает на кдолларов.</p>
+										</div>
+										<a class="mag__link mag__link-file mag__link-file--txt" href="#">
+											<svg width="35" height="37" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M24.4182 20.6604H0.910156V30.3368H20.8771L24.4182 20.6604ZM9.30742 23.6594H7.74648V28.0387H6.90098V23.6594H5.36172V22.9801H9.30742V23.6594ZM13.0002 28.0387L11.9018 26.1381L10.8033 28.0387H9.80605L11.3959 25.4877L9.83496 22.9801H10.8322L11.8873 24.8518L12.9568 22.9801H13.9541L12.4004 25.4877L14.0191 28.0387H13.0002ZM18.4273 23.6594H16.8592V28.0387H16.0137V23.6594H14.4744V22.9801H18.4201V23.6594H18.4273Z" fill="#EF3343"/>
+												<path d="M23.4992 0.433594H5.75801C5.23047 0.433594 4.79688 0.867187 4.79688 1.39473V19.9525H6.71914V2.35586H23.4992V9.01875H30.1621V34.6441H6.71914V31.0453H4.79688V35.6053C4.79688 36.1328 5.23047 36.5664 5.75801 36.5664H31.1232C31.6508 36.5664 32.0844 36.1328 32.0844 35.6053V9.01875L23.4992 0.433594Z" fill="#EF3343"/>
+												<path d="M27.6012 12.386H9.28906V13.8024H27.6012V12.386Z" fill="#EF3343"/>
+												<path d="M24.7033 15.1396H9.28906V16.5561H24.7033V15.1396Z" fill="#EF3343"/>
+											</svg>
+										</a>
+										<a class="mag__link mag__link-file mag__link-file--pdf" href="#">
+											<svg width="31" height="37" viewBox="0 0 31 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_118_715)">
+												<path d="M10.5621 23.7754H9.73828V27.4826H10.5621C10.9668 27.4826 11.292 27.3453 11.5305 27.0707C11.7689 26.7961 11.8918 26.442 11.8918 26.0156V25.2424C11.8918 24.816 11.7689 24.4691 11.5305 24.1945C11.292 23.9127 10.9668 23.7754 10.5621 23.7754Z" fill="#11B24C"/>
+												<path d="M23.4182 20.6606H-0.0898438V30.337H19.8771L23.4182 20.6606ZM7.39687 25.8132C7.07891 26.1022 6.64531 26.2396 6.08887 26.2396H4.99766V28.1546H4.15215V23.096H6.08887C6.64531 23.096 7.08613 23.2405 7.39687 23.5296C7.71484 23.8187 7.87383 24.1944 7.87383 24.6642C7.87383 25.1483 7.71484 25.5241 7.39687 25.8132ZM12.7301 26.0155C12.7301 26.6515 12.5277 27.1646 12.1303 27.562C11.7256 27.9595 11.2053 28.1618 10.5621 28.1618H8.89277V23.1032H10.5621C11.2053 23.1032 11.7256 23.3056 12.1303 23.703C12.535 24.1005 12.7301 24.6208 12.7301 25.2495V26.0155ZM17.1094 23.7753H14.7174V25.3218H16.7553V26.0011H14.7174V28.1618H13.8719V23.1032H17.1094V23.7753V23.7753Z" fill="#11B24C"/>
+												<path d="M6.09121 23.7754H5V25.5604H6.09121C6.40195 25.5604 6.64043 25.4736 6.79941 25.3074C6.9584 25.1412 7.03789 24.9316 7.03789 24.6715C7.03789 24.4113 6.9584 24.2018 6.79941 24.0283C6.64043 23.8621 6.40195 23.7754 6.09121 23.7754Z" fill="#11B24C"/>
+												<path d="M22.4992 0.433594H4.75801C4.23047 0.433594 3.79688 0.867187 3.79688 1.39473V19.9525H5.71914V2.35586H22.4992V9.01875H29.1621V34.6441H5.71914V31.0453H3.79688V35.6053C3.79688 36.1328 4.23047 36.5664 4.75801 36.5664H30.1232C30.6508 36.5664 31.0844 36.1328 31.0844 35.6053V9.01875L22.4992 0.433594Z" fill="#11B24C"/>
+												<path d="M26.5973 12.3862H8.28516V13.8026H26.5973V12.3862Z" fill="#11B24C"/>
+												<path d="M23.6994 15.1396H8.28516V16.5561H23.6994V15.1396Z" fill="#11B24C"/>
+												</g>
+												<defs>
+												<clipPath id="clip0_118_715">
+												<rect width="31" height="37" fill="white"/>
+												</clipPath>
+												</defs>
+											</svg>
+										</a>
+										<a class="mag__link mag__link-file mag__link-file--video" href="#">
+											<svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10 6.5L0.25 12.1292L0.250001 0.870834L10 6.5Z" fill="white"/>
+											</svg>
+										</a>
+									</div>
 								</div>
 							</div>
-							<div class="novelties__card">
-								<div class="novelties__image">
-									<img src="images/novelties-2.jpg" alt="Изображение Каски">
-								</div>
-								<div class="novelties__text">
-									<h4 class="novelties__card-title">
-										Газопостачальної компанії 
-									</h4>
-									<p class="novelties__card-descr">
-										 (ПОН) і які приєднаються до Газопостачальної компанії “Нафтогаз України”, мають
-									</p>
-								</div>
-							</div>
-							<div class="novelties__card">
-								<div class="novelties__image">
-									<img src="images/novelties-3.jpg" alt="Изображение Отвечающих Людей">
-								</div>
-								<div class="novelties__text">
-									<h4 class="novelties__card-title">
-										Економія
-									</h4>
-									<p class="novelties__card-descr">
-										Можливість економити 52% на оплаті за газ у жовтні 2021 року. Це особливо актуально
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="novelties__all">
-							<a class="novelties__all-link" href="#">
-								<span>Всі новини</span>
-								<svg width="39" height="4" viewBox="0 0 39 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M38.1768 2.17678C38.2744 2.07915 38.2744 1.92085 38.1768 1.82322L36.5858 0.232233C36.4882 0.134602 36.3299 0.134602 36.2322 0.232233C36.1346 0.329864 36.1346 0.488155 36.2322 0.585786L37.6464 2L36.2322 3.41421C36.1346 3.51184 36.1346 3.67014 36.2322 3.76777C36.3299 3.8654 36.4882 3.8654 36.5858 3.76777L38.1768 2.17678ZM0 2.25H38V1.75H0V2.25Z" fill="#00A1E1"/>
-								</svg>
-							</a>
 						</div>
 					</div>
 				</section>
@@ -289,7 +281,7 @@
 					<div class="container">
 						<div class="footer__body">
 							<div class="footer__header">
-								<a class="footer__logo-link">
+								<a class="footer__logo-link" href="index.html">
 									<img class="footer__logo" src="images/logo.png" alt="Логотип deep">
 								</a>
 								<div class="footer__descr">
